@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SnapFolio - Alexander Chen</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.4.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  >
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    rel="stylesheet"
+  >
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+  </head>
+  <body>
+    <div class="layout-wrapper">
+      <aside class="sidebar">
+        <ul class="nav flex-column nav-list">
+          <li class="nav-item">
+            <a class="nav-link active" href="#home">
+              <i class="fa-solid fa-house"></i> Home
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">
+              <i class="fa-regular fa-user"></i> About
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#resume">
+              <i class="fa-regular fa-file-lines"></i> Resume
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#portfolio">
+              <i class="fa-regular fa-image"></i> Portfolio
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#services">
+              <i class="fa-solid fa-server"></i> Services
+            </a>
+          </li>
+         <li class="nav-item dropdown">
+  <a class="nav-link dropdown-toggle" href="#" id="sidebarDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+    <i class="fa-solid fa-server"></i> Dropdown
+  </a>
+  <ul class="dropdown-menu" aria-labelledby="sidebarDropdown">
+    <li><a class="dropdown-item" href="#item1">First Item</a></li>
+    <li><a class="dropdown-item" href="#item2">Second Item</a></li>
+    <li><a class="dropdown-item" href="#item3">Third Item</a></li>
+  </ul>
+</li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">
+              <i class="fa-regular fa-envelope"></i> Contact
+            </a>
+          </li>
+        </ul>
+        <div class="mt-auto sidebar-socials p-3">
+          <a href="#" class="me-2"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#" class="me-2"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" class="me-2"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" class="me-2"><i class="fa-brands fa-skype"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+      </aside>
+      <main class="main-area">
+        <div class="container-fluid px-0">
+          <div class="row gx-0">
+            <div class="col-12">
+              <!-- Home Section -->
+              <section id="home" class="container py-5 main-content">
+                <main class="d-flex flex-wrap align-items-center main-content">
+                  <div class="info-section flex-fill" data-aos="fade-right">
+                    <h1>
+                      <span class="snap">Snap</span><span class="folio">Folio</span>
+                    </h1>
+                    <h2>Alexander Chen</h2>
+                    <div class="subtitle">
+                      I'm a <span class="typewriter-text"></span>
+                    </div>
+                    <p class="desc">
+                      Passionate about creating exceptional digital experiences that blend innovative design with functional development. Let's bring your vision to life.
+                    </p>
+                    <div class="cta-buttons mb-3">
+                      <button class="btn btn-main me-2">View My Work</button>
+                      <button class="btn btn-outline">Get In Touch</button>
+                    </div>
+                    <div class="main-socials">
+                      <a href="#" class="me-2"><i class="fa-brands fa-dribbble"></i></a>
+                      <a href="#" class="me-2"><i class="fa-brands fa-behance"></i></a>
+                      <a href="#" class="me-2"><i class="fa-brands fa-github"></i></a>
+                      <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                  </div>
+                  <div class="photo-section flex-fill text-center" data-aos="fade-left">
+                    <div class="photo-bg"></div>
+                    <img src="profile/profile-2.webp" alt="Alexander Chen" class="profile-photo img-fluid rounded-circle">
+                  </div>
+                </main>
+              </section>
+              <!-- About Section -->
+              <section id="about" class="about-section">
+                <div class="row about-container" data-aos="fade-left">
+                  <div class="col-lg-4 mb-4 about-profile-card text-center">
+                    <div class="about-profile-pic-wrapper position-relative d-inline-block">
+                      <img src="profile/profile-square-2.webp" alt="..." class="about-profile-pic img-fluid rounded-circle">
+                      <span class="about-profile-verified position-absolute top-0 end-0">
+                        <i class="fa-solid fa-circle-check"></i>
+                      </span>
+                    </div>
+                    <h2 class="about-name mt-3">Alexander Chen</h2>
+                    <p class="about-role">Creative Director & Developer</p>
+                    <div class="about-contact-list">
+                      <div class="about-contact mb-2">
+                        <i class="fa-regular fa-envelope me-1"></i>abc@example.com
+                      </div>
+                      <div class="about-contact mb-2">
+                        <i class="fa-solid fa-phone me-1"></i>+123-4567-89
+                      </div>
+                      <div class="about-contact">
+                        <i class="fa-solid fa-location-dot me-1"></i>United States of America
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-8 about-content" data-aos="fade-left">
+                    <button class="btn about-cta-btn mb-3">Get to Know Me</button>
+                    <h3 class="about-title">Passionate About Creating<br>Digital Experiences</h3>
+                    <p class="about-desc">
+                      Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium...
+                    </p>
+                    <div class="row about-stats-row text-center mt-4">
+                      <div class="col about-stat">
+                        <span class="about-stat-number">150+</span>
+                        <span class="about-stat-label d-block">Projects Completed</span>
+                      </div>
+                      <div class="col about-stat">
+                        <span class="about-stat-number">5+</span>
+                        <span class="about-stat-label d-block">Year Experience</span>
+                      </div>
+                      <div class="col about-stat">
+                        <span class="about-stat-number">98%</span>
+                        <span class="about-stat-label d-block">Client Satisfaction</span>
+                      </div>
+                    </div>
+                    <div class="row about-info-grid mt-4">
+                      <div class="col-md-6 mb-3">
+                        <div class="about-info-label">Specialization</div>
+                        <div class="about-info-value">UI|UX Design & Development</div>
+                      </div>
+                      <div class="col-md-6 mb-3">
+                        <div class="about-info-label">Experience Level</div>
+                        <div class="about-info-value">Senior Professional</div>
+                      </div>
+                      <div class="col-md-6 mb-3">
+                        <div class="about-info-label">Languages</div>
+                        <div class="about-info-value">English, Spanish , French</div>
+                      </div>
+                      <div class="col-md-6 mb-3">
+                        <div class="about-info-label">Education</div>
+                        <div class="about-info-value">MS Computer Science</div>
+                      </div>
+                    </div>
+                    <div class="d-flex flex-column flex-sm-row gap-2 mt-4 about-actions-vertical">
+                      <a href="resume.pdf" class="btn about-action-btn main" download>
+                        <i class="fa-solid fa-download me-1"></i> Download Resume
+                      </a>
+                      <a href="#contact" class="btn about-action-btn secondary">
+                        <i class="fa-regular fa-comments me-1"></i> Let's Talk
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <!-- Stats Section -->
+              <section id="stats" class="stats-section" data-aos="fade-up">
+                <div class="container d-flex justify-content-center">
+                  <div class="row text-center stats-row-nowrap w-100" data-aos="fade-right">
+                    <div class="col-lg-3 col-md-6 col-sm-6 mb-4">
+                      <div class="card p-4 stat-card">
+                        <div class="mb-3">
+                          <div class="stat-icon happy-clients">
+                            <i class="fas fa-smile"></i>
+                          </div>
+                        </div>
+                        <h3 class="counter" data-target="232">0</h3>
+                        <p class="stat-label">Happy Clients</p>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 mb-4">
+                      <div class="card p-4 stat-card">
+                        <div class="mb-3">
+                          <div class="stat-icon projects">
+                            <i class="fas fa-tasks"></i>
+                          </div>
+                        </div>
+                        <h3 class="counter" data-target="521">0</h3>
+                        <p class="stat-label">Projects</p>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 mb-4">
+                      <div class="card p-4 stat-card">
+                        <div class="mb-3">
+                          <div class="stat-icon support">
+                            <i class="fas fa-headset"></i>
+                          </div>
+                        </div>
+                        <h3 class="counter" data-target="1463">0</h3>
+                        <p class="stat-label">Hours of Support</p>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 mb-4">
+                      <div class="card p-4 stat-card">
+                        <div class="mb-3">
+                          <div class="stat-icon workers">
+                            <i class="fas fa-users"></i>
+                          </div>
+                        </div>
+                        <h3 class="counter" data-target="15">0</h3>
+                        <p class="stat-label">Hard Workers</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <!-- Skills Section -->
+              <section class="skills-section py-5" data-aos="fade-up">
+                <div class="text-center mb-4">
+                  <h2 class="fw-bold display-5 position-relative d-inline-block">
+                    <span class="skills-tittle-line me-4"></span>
+                    Skills
+                    <span class="skills-tittle-line ms-4"></span>
+                  </h2>
+                  <p class="mt-3 fs-5 text-light">
+                    Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit
+                  </p>
+                </div>
+                <div class="container">
+                  <div class="row g-4 justify-content-center mt-0">
+                    <div class="col-md-6 d-flex align-items-stretch">
+                      <div class="card skills-card w-100 h-100" data-aos="fade-right">
+                        <div class="card-body">
+                          <h3 class="fw-bold text-white mb-2">Front-end Development</h3>
+                          <div class="skills-card-divider mb-4"></div>
+                          <div class="mb-4">
+                            <div class="d-flex justify-content-between mb-1">
+                              <span class="fw-bold text-white">HTML/CSS</span>
+                              <span class="text-gold fw-bold percent-text">95%</span>
+                            </div>
+                            <div class="progress skills-progress mb-2">
+                              <div class="progress-bar bg-gold" data-target="95" aria-valuemin="0" aria-valuenow="95" aria-valuemax="100"></div>
+                            </div>
+                          </div>
+                          <div class="mb-4">
+                            <div class="d-flex justify-content-between mb-1">
+                              <span class="fw-bold text-white">JavaScript</span>
+                              <span class="text-gold fw-bold percent-text">85%</span>
+                            </div>
+                            <div class="progress skills-progress mb-2">
+                              <div class="progress-bar bg-gold" data-target="85"></div>
+                            </div>
+                          </div>
+                          <div>
+                            <div class="d-flex justify-content-between mb-1">
+                              <span class="fw-bold text-white">React</span>
+                              <span class="text-gold fw-bold percent-text">80%</span>
+                            </div>
+                            <div class="progress skills-progress mb-2">
+                              <div class="progress-bar bg-gold" data-target="80"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6 d-flex align-items-stretch">
+                      <div class="card skills-card w-100 h-100" data-aos="fade-left">
+                        <div class="card-body">
+                          <h3 class="fw-bold text-white mb-2">Back-end Development</h3>
+                          <div class="skills-card-divider mb-4"></div>
+                          <div class="mb-4">
+                            <div class="d-flex justify-content-between mb-1">
+                              <span class="fw-bold text-white">Node.js</span>
+                              <span class="text-gold fw-bold percent-text">75%</span>
+                            </div>
+                            <div class="progress skills-progress mb-2">
+                              <div class="progress-bar bg-gold" data-target="75"></div>
+                            </div>
+                          </div>
+                          <div class="mb-4">
+                            <div class="d-flex justify-content-between mb-1">
+                              <span class="fw-bold text-white">Python</span>
+                              <span class="text-gold fw-bold percent-text">70%</span>
+                            </div>
+                            <div class="progress skills-progress mb-2">
+                              <div class="progress-bar bg-gold" data-target="70"></div>
+                            </div>
+                          </div>
+                          <div>
+                            <div class="d-flex justify-content-between mb-1">
+                              <span class="fw-bold text-white">SQL</span>
+                              <span class="text-gold fw-bold percent-text">65%</span>
+                            </div>
+                            <div class="progress skills-progress mb-2">
+                              <div class="progress-bar bg-gold" data-target="65"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <!-- Resume Section -->
+              <section id="resume" class="resume-section py-5" data-aos="fade-left">
+                <div class="text-center mb-4">
+                  <h2 class="fw-bold display-5 position-relative d-inline-block">
+                    <span class="resume-title-line me-4"></span>
+                    Resume
+                    <span class="resume-title-line ms-4"></span>
+                  </h2>
+                  <p class="mt-3 fs-5 text-light">
+                    Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex <br>
+                    aliquid fuga eum quidem. Sit sint consectetur velit. <br>
+                    Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. <br>
+                    Quia fugiat sit in iste officiis commodi quidem hic quas.
+                  </p>
+                </div>
+                <div class="container">
+                  <div class="row justify-content-center align-items-start g-5">
+                    <div class="col-md-4">
+                      <div class="resume-profile-card text-center p-4">
+                        <div class="resume-photo-wrapper mb-4">
+                          <img src="profile/profile-square-3.webp" alt="..." class="resume-photo img-fluid rounded-3">
+                        </div>
+                        <h3 class="fw-bold mb-3">Professional Summary</h3>
+                        <p class="resume-summary mb-0">
+                          Driven software architect with expertise in developing scalable, high-performance enterprise solutions. Passionate about leveraging cutting-edge technologies and modern architectures.
+                        </p>
+                        <h3 class="fw-bold mt-4">Contact Information</h3>
+                        <div class="resume-contact">
+                          <p class="mb-2"><i class="fa-solid fa-location-dot me-2"></i>742 Main Street, Lahore, PK</p>
+                          <p class="mb-2"><i class="fa-solid fa-envelope me-2"></i>zeeshan@example.com</p>
+                          <p class="mb-2"><i class="fa-solid fa-phone me-2"></i>+92 300 1234567</p>
+                          <p class="mb-2"><i class="fa-brands fa-linkedin-in me-2"></i>linkedin.com/in/zeeshan62666</p>
+                        </div>
+                        <h3 class="fw-bold mb-3 mt-4">Technical Skills</h3>
+                        <div class="resume-skills">
+                          <div class="skill-item mb-3">
+                            <span class="skill-name">Web Development</span>
+                            <div class="progress-container">
+                              <div class="progress">
+                                <div class="progress-bar bg-gold" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                              </div>
+                              <span class="progress-label">95%</span>
+                            </div>
+                          </div>
+                          <div class="skill-item mb-3">
+                            <span class="skill-name">UI/UX Design</span>
+                            <div class="progress-container">
+                              <div class="progress">
+                                <div class="progress-bar bg-gold" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                              </div>
+                              <span class="progress-label">85%</span>
+                            </div>
+                          </div>
+                          <div class="skill-item mb-3">
+                            <span class="skill-name">Cloud Architecture</span>
+                            <div class="progress-container">
+                              <div class="progress">
+                                <div class="progress-bar bg-gold" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                              </div>
+                              <span class="progress-label">90%</span>
+                            </div>
+                          </div>
+                          <div class="skill-item mb-3">
+                            <span class="skill-name">Project Management</span>
+                            <div class="progress-container">
+                              <div class="progress">
+                                <div class="progress-bar bg-gold" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                              </div>
+                              <span class="progress-label">80%</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-8">
+                      <div class="resume-exp-card p-4">
+                        <h3 class="fw-bold mb-4">
+                          <i class="fa-solid fa-briefcase text-gold me-2"></i>Professional Experience
+                        </h3>
+                        <div class="resume-timeline">
+                          <div class="resume-timeline-item mb-5">
+                            <div class="resume-timeline-dot"></div>
+                            <h4 class="fw-solid mb-1">Senior Software Architect</h4>
+                            <div class="resume-time text-gold">2022 - Present</div>
+                            <p class="mb-1">
+                              <i class="fa-solid fa-building me-2"></i>Tech Innovations Ltd.
+                            </p>
+                            <ul>
+                              <li>Lead the architectural design and implementation of enterprise-scale applications</li>
+                              <li>Mentored a team of 12 developers and established technical best practices</li>
+                              <li>Drove adoption of microservices architecture and cloud-native solutions</li>
+                              <li>Reduced system downtime by 75% through improved architecture and monitoring</li>
+                            </ul>
+                          </div>
+                          <div class="resume-timeline-item mb-5">
+                            <div class="resume-timeline-dot"></div>
+                            <h4 class="fw-solid mb-1">Lead Developer</h4>
+                            <div class="resume-time text-gold">2019 - 2022</div>
+                            <p class="mb-1">
+                              <i class="fa-solid fa-building me-2"></i>Digital Solutions Corp.
+                            </p>
+                            <ul>
+                              <li>Spearheaded development of company's flagship product reaching 1M+ users</li>
+                              <li>Implemented CI/CD pipeline reducing deployment time by 60%</li>
+                              <li>Managed team of 8 developers across multiple projects</li>
+                              <li>Increased code test coverage from 45% to 90%</li>
+                            </ul>
+                          </div>
+                        </div>
+                        <h3 class="fw-bold mb-4 mt-5">
+                          <i class="fa-solid fa-graduation-cap text-gold me-2"></i>Education
+                        </h3>
+                        <div class="resume-timeline">
+                          <div class="resume-timeline-item mb-5">
+                            <div class="resume-timeline-dot"></div>
+                            <h4 class="fw-solid mb-1">Master of Science in Computer Science</h4>
+                            <div class="resume-time text-gold">2017 - 2019</div>
+                            <p class="mb-1">
+                              <i class="fa-solid fa-building me-2"></i>National University of Sciences and Technology, PK
+                            </p>
+                            <p>Specialized in Artificial Intelligence and Machine Learning. Graduated with honors.</p>
+                          </div>
+                          <div class="resume-timeline-item mb-5">
+                            <div class="resume-timeline-dot"></div>
+                            <h4 class="fw-solid mb-1">Bachelor of Science in Software Engineering</h4>
+                            <div class="resume-time text-gold">2013 - 2017</div>
+                            <p class="mb-1">
+                              <i class="fa-solid fa-building me-2"></i>University of Engineering and Technology, Lahore
+                            </p>
+                            <p>Dean's List all semesters. Led university's coding club.</p>
+                          </div>
+                        </div>
+                        <h3 class="fw-bold mb-4 mt-5">
+                          <i class="fa-solid fa-award text-gold me-2"></i>Certifications
+                        </h3>
+                        <div class="resume-timeline">
+                          <div class="resume-timeline-item mb-5">
+                            <div class="resume-timeline-dot"></div>
+                            <h4 class="fw-solid mb-1">AWS Certified Solutions Architect - Professional</h4>
+                            <div class="resume-time text-gold">2022</div>
+                          </div>
+                          <div class="resume-timeline-item mb-5">
+                            <div class="resume-timeline-dot"></div>
+                            <h4 class="fw-solid mb-1">Google Cloud Professional Architect</h4>
+                            <div class="resume-time text-gold">2022</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <!-- Portfolio Section -->
+              <section class="portfolio-section py-5" id="portfolio">
+                <div class="text-center mb-4" data-aos="fade-up">
+                  <h2 class="fw-bold display-5 position-relative d-inline-block">
+                    <span class="portfolio-title-line me-4"></span>
+                    Portfolio
+                    <span class="portfolio-title-line ms-4"></span>
+                  </h2>
+                  <p class="mt-3 fs-5 text-light">
+                    Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex <br>
+                    aliquid fuga eum quidem. Sit sint consectetur velit. <br>
+                    Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. <br>
+                    Quia fugiat sit in iste officiis commodi quidem hic quas.
+                  </p>
+                </div>
+                <div class="container d-flex justify-content-center">
+                  <div class="row justify-content-center align-items-start g-5">
+                    <div class="col-md-4" data-aos="fade-right">
+                      <div class="portfolio-card text-center p-4">
+                        <ul id="portfolio-flters">
+                          <li data-filter="*" class="filter-active">All projects</li>
+                          <li data-filter=".filter-photography">Photography</li>
+                          <li data-filter=".filter-design">Design</li>
+                          <li data-filter=".filter-automotive">Automotive</li>
+                          <li data-filter=".filter-nature">Nature</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-md-8">
+                      <div class="portfolio-container" data-aos="fade-left">
+                        <div class="portfolio-item filter-photography">
+                          <div class="portfolio-wrap">
+                            <img src="portfolio/portfolio-1.webp" alt="Photography">
+                            <div class="portfolio-info">
+                              <h4>Photography</h4>
+                              <p>Capturing Moments</p>
+                              <div class="portfolio-links">
+                                <a href="#" title="View"><i class="fa-solid fa-plus"></i></a>
+                                <a href="#" title="More Details"><i class="fa-solid fa-link"></i></a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="portfolio-item filter-photography">
+                          <div class="portfolio-wrap">
+                            <img src="portfolio/portfolio-10.webp" alt="Urban Photography">
+                            <div class="portfolio-info">
+                              <h4>Photography</h4>
+                              <p>Urban Stories</p>
+                              <div class="portfolio-links">
+                                <a href="#" title="View"><i class="fa-solid fa-plus"></i></a>
+                                <a href="#" title="More Details"><i class="fa-solid fa-link"></i></a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="portfolio-item filter-design">
+                          <div class="portfolio-wrap">
+                            <img src="portfolio/portfolio-2.webp" alt="WoodCraft Design">
+                            <div class="portfolio-info">
+                              <h4>Design</h4>
+                              <p>WoodCraft Design</p>
+                              <div class="portfolio-links">
+                                <a href="#" title="View"><i class="fa-solid fa-plus"></i></a>
+                                <a href="#" title="More Details"><i class="fa-solid fa-link"></i></a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="portfolio-item filter-design">
+                          <div class="portfolio-wrap">
+                            <img src="portfolio/portfolio-5.webp" alt="Digital Design">
+                            <div class="portfolio-info">
+                              <h4>Design</h4>
+                              <p>Digital Design</p>
+                              <div class="portfolio-links">
+                                <a href="#" title="View"><i class="fa-solid fa-plus"></i></a>
+                                <a href="#" title="More Details"><i class="fa-solid fa-link"></i></a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="portfolio-item filter-automotive">
+                          <div class="portfolio-wrap">
+                            <img src="portfolio/portfolio-6.webp" alt="Classic Car">
+                            <div class="portfolio-info">
+                              <h4>Automotive</h4>
+                              <p>Classic Beauty</p>
+                              <div class="portfolio-links">
+                                <a href="#" title="View"><i class="fa-solid fa-plus"></i></a>
+                                <a href="#" title="More Details"><i class="fa-solid fa-link"></i></a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="portfolio-item filter-nature">
+                          <div class="portfolio-wrap">
+                            <img src="portfolio/portfolio-7.webp" alt="Nature">
+                            <div class="portfolio-info">
+                              <h4>Nature</h4>
+                              <p>Natural Growth</p>
+                              <div class="portfolio-links">
+                                <a href="#" title="View"><i class="fa-solid fa-plus"></i></a>
+                                <a href="#" title="More Details"><i class="fa-solid fa-link"></i></a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="portfolio-item filter-photography">
+                          <div class="portfolio-wrap">
+                            <img src="portfolio/portfolio-portrait-1.webp" alt="Street Photography">
+                            <div class="portfolio-info">
+                              <h4>Photography</h4>
+                              <p>Street Life</p>
+                              <div class="portfolio-links">
+                                <a href="#" title="View"><i class="fa-solid fa-plus"></i></a>
+                                <a href="#" title="More Details"><i class="fa-solid fa-link"></i></a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                   
+                        <div class="portfolio-item filter-automotive">
+                          <div class="portfolio-wrap">
+                            <img src="portfolio/portfolio-portrait-4.webp" alt="Modern Car">
+                            <div class="portfolio-info">
+                              <h4>Automotive</h4>
+                              <p>Modern Design</p>
+                              <div class="portfolio-links">
+                                <a href="#" title="View"><i class="fa-solid fa-plus"></i></a>
+                                <a href="#" title="More Details"><i class="fa-solid fa-link"></i></a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <!-- Services Section -->
+              <section class="services-section" id="services">
+                <div class="container">
+                  <div class="services-header">
+                    <h1 class="services-title">Services</h1>
+                    <p class="services-subtitle">
+                      Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit
+                    </p>
+                  </div>
+                  <div class="main-content">
+                    <div class="content-left">
+                      <h2 class="main-heading">
+                        Innovative business<br>
+                        <span class="highlight-text">performance solutions</span>
+                      </h2>
+                    </div>
+                    <div class="content-right">
+                      <p class="main-description">
+                        We integrate forward-thinking strategies, creative approaches, and state-of-the-art technologies to deliver exceptional customer experiences that drive growth and engage target markets.
+                      </p>
+                      <div style="text-align: right;">
+                        <a href="#" class="btn-readmore">Read More →</a>
+                      </div>
+                    </div>
+                  </div>
+<div class="services-grid">
+  <div class="service-card">
+    <div class="service-icon">
+      <i class="fa-solid fa-palette"></i>
+    </div>
+    <h3 class="service-title">Creative branding</h3>
+    <p class="service-description">
+      Nulla facilisi. Maecenas eget magna neque. Suspendisse potenti. Curabitur eleifend nisi non magna vulputate, vel condimentum libero tempus.
+    </p>
+    <div class="service-arrow">
+      <i class="fa-solid fa-arrow-right"></i>
+    </div>
+  </div>
+
+  <div class="service-card">
+    <div class="service-icon">
+      <i class="fa-regular fa-gem"></i>
+    </div>
+    <h3 class="service-title">Design systems</h3>
+    <p class="service-description">
+      Praesent euismod varius tellus, vel bibendum nunc interdum at. Donec vehicula diam vel metus venenatis convallis. Aliquam erat volutpat.
+    </p>
+    <div class="service-arrow">
+      <i class="fa-solid fa-arrow-right"></i>
+    </div>
+  </div>
+
+  <div class="service-card">
+    <div class="service-icon">
+      <i class="fa-solid fa-bullhorn"></i>
+    </div>
+    <h3 class="service-title">Marketing strategies</h3>
+    <p class="service-description">
+      Vivamus tempor velit id magna dictum, sed fermentum nisi faucibus. Integer nec pretium sapien. Fusce tincidunt ligula et purus consequat.
+    </p>
+    <div class="service-arrow">
+      <i class="fa-solid fa-arrow-right"></i>
+    </div>
+  </div>
+
+  <div class="service-card">
+    <div class="service-icon">
+      <i class="fa-solid fa-code"></i>
+    </div>
+    <h3 class="service-title">Digital platforms</h3>
+    <p class="service-description">
+      Cras fermentum odio eu feugiat malesuada. Vestibulum ante ipsum primis in faucibus orci luctus et accumsan cursus. Morbi placerat nulla.
+    </p>
+    <div class="service-arrow">
+      <i class="fa-solid fa-arrow-right"></i>
+    </div>
+  </div>
+
+  <div class="service-card">
+    <div class="service-icon">
+      <i class="fa-solid fa-chart-line"></i>
+    </div>
+    <h3 class="service-title">Growth acceleration</h3>
+    <p class="service-description">
+      Aenean vel augue vel nisi bibendum posuere. Phasellus in lacus quis urna sodales dignissim. Duis aliquam libero eget risus facilisis.
+    </p>
+    <div class="service-arrow">
+      <i class="fa-solid fa-arrow-right"></i>
+    </div>
+  </div>
+
+  <div class="service-card">
+    <div class="service-icon">
+      <i class="fa-solid fa-video"></i>
+    </div>
+    <h3 class="service-title">Media solution</h3>
+    <p class="service-description">
+      Etiam efficitur lacus in diam finibus, nec ultrices est sagittis. Maecenas elementum magna sed risus faucibus, nec commodo purus facilisis.
+    </p>
+    <div class="service-arrow">
+      <i class="fa-solid fa-arrow-right"></i>
+    </div>
+  </div>
+</div>
+
+              </section>
+              <section class="testimonials-section" id="testimonials">
+                <div class="container">
+                  <div class="testimonials-header text-center mb-4 " data-aos="fade-right">
+                    <h2 class="fw-bold display-5 position-relative d-inline-block">
+                      <span class="section-line me-4"></span>
+                      Testimonials
+                      <span class="section-line ms-4"></span>
+                    </h2>
+                    <p class="mt-3 fs-5 text-light">
+                       Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit
+                    </p>
+                  </div>
+                  <div class="testimonials-grid" data-aos="fade-up" data-aos-delay="100">
+                    <div class="testimonial-card">
+                      <div class="qoute-icon">
+                        <i class="fa-solid fa-quote-left"></i>
+                      </div>
+                      <p class="testimonial-text">
+                        Implementing innovative strategies has revolutionized our approach to market challenges and competitive positioning.
+                      </p>
+                      <div class="testimonial-author">
+                        <img src="person/person-f-7.webp" alt="p1">
+                        
+                        <div>
+                          <h4>Rachel Bennet</h4>
+                          <span>Strategy Director</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="testimonial-card">
+                      <div class="qoute-icon">
+                        <i class="fa-solid fa-quote-left"></i>
+                      </div>
+                      <p class="testimonial-text">
+                        Exceptional service delivery and innovative solutions have transformed our business operations, leading to remarkable growth and enhanced customer satisfaction across all touchpoints.
+                      </p>
+                      <div class="testimonial-author">
+                        <img src="person/person-f-8.webp" alt="p2">
+                        <div>
+                          <h4>Daniel Morgan </h4>
+                          <span>Chief Innovation Officer </span>
+                        </div>
+                      </div>
+                    </div>
+                       <div class="testimonial-card">
+                      <div class="qoute-icon">
+                        <i class="fa-solid fa-quote-left"></i>
+                      </div>
+                      <p class="testimonial-text">
+                        Strategic partnership has enabled seamless digital transformation and operational excellence.
+                      </p>
+                      <div class="testimonial-author">
+                        <img src="person/person-f-9.webp" alt="p2">
+                        <div>
+                          <h4>Emma Thompson </h4>
+                          <span>Digital Lead </span>
+                        </div>
+                      </div>
+                    </div>
+                     <div class="testimonial-card">
+                      <div class="qoute-icon">
+                        <i class="fa-solid fa-quote-left"></i>
+                      </div>
+                      <p class="testimonial-text">
+                       Professional expertise and dedication have significantly improved our project delivery timelines and quality metrics.
+                      </p>
+                      <div class="testimonial-author">
+                        <img src="person/person-m-13.webp" alt="p2">
+                        <div>
+                          <h4>Christopher Lee</h4>
+                          <span>Technical Director</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="testimonial-card">
+                      <div class="qoute-icon">
+                        <i class="fa-solid fa-quote-left"></i>
+                      </div>
+                      <p class="testimonial-text">
+                       Collaborative approach and industry expertise have revolutionized our product development cycle, resulting in faster time-to-market and increased customer engagement levels.
+                      </p>
+                      <div class="testimonial-author">
+                        <img src="person/person-m-7.webp" alt="p2">
+                        <div>
+                          <h4>Olivia Carter</h4>
+                          <span>Product Manager</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="testimonial-card">
+                      <div class="qoute-icon">
+                        <i class="fa-solid fa-quote-left"></i>
+                      </div>
+                      <p class="testimonial-text">
+                       Innovative approach to user experience design has significantly enhanced our platform's engagement metrics and customer retention rates.
+                      </p>
+                      <div class="testimonial-author">
+                        <img src="person/person-m-7.webp" alt="p2">
+                        <div>
+                          <h4>Nathan Brooks</h4>
+                          <span>UX Director</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+ <section class="contact-section" id="contact">
+        <div class="container">
+            <!-- Header -->
+            <div class="contact-header">
+                <h2>
+                    <span class="section-line me-4"></span>
+                    Contact
+                    <span class="section-line ms-4"></span>
+                </h2>
+                <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+            </div>
+
+            <!-- Main Contact Container -->
+            <div class="contact-container">
+                <!-- Left Panel - Contact Info -->
+                <div class="contact-info">
+                    <h3>Contact Info</h3>
+                    <p>Praesent sapien massa, convallis a pellentesque nec, egestas non nisl. Vestibulum ante ipsum primis.</p>
+
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                            </svg>
+                        </div>
+                        <div class="info-content">
+                            <h4>Our Location</h4>
+                            <p>A108 Adam Street</p>
+                            <p>New York, NY 535022</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                            </svg>
+                        </div>
+                        <div class="info-content">
+                            <h4>Phone Number</h4>
+                            <p>+1 5589 55488 55</p>
+                            <p>+1 6678 254445 41</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                            </svg>
+                        </div>
+                        <div class="info-content">
+                            <h4>Email Address</h4>
+                            <p>info@example.com</p>
+                            <p>contact@example.com</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Panel - Contact Form -->
+                <div class="contact-form">
+                    <h3>Get In Touch</h3>
+                    <p>Praesent sapien massa, convallis a pellentesque nec, egestas non nisl. Vestibulum ante ipsum primis.</p>
+
+                    <form id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+                            </div>
+                        </div>
+
+                        <input type="text" name="subject" class="form-control" placeholder="Subject" required>
+
+                        <textarea name="message" class="form-control" placeholder="Message" required></textarea>
+
+                        <button type="submit" class="btn-send">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="https://unpkg.com/countup.js@2.0.7/dist/countUp.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.4.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+  ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="script.js" defer></script>
+  </body>
+</html>
